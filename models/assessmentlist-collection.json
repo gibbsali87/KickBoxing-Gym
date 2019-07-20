@@ -1,0 +1,47 @@
+{
+  "assessmentlistCollection":[
+    {
+      "id":"01",
+      "title":"Member 1",
+      "assessments":[
+      {
+        "weight":105,
+        "chest":36,
+        "thigh":20,
+        "upperArm":15,
+        "waist":36,
+        "hips":42
+      }
+     ]
+    },
+    {
+      "id":"02",
+      "title":"Member 2",
+      "assessments":[
+      {
+        "weight":90,
+        "chest":30,
+        "thigh":15,
+        "upperArm":10,
+        "waist":30,
+        "hips":35
+      }
+     ]
+    },
+    
+     {
+      "id":"03",
+      "title":"Member 3",
+      "assessments":[
+      {
+        "weight":90,
+        "chest":30,
+        "thigh":15,
+        "upperArm":10,
+        "waist":30,
+        "hips":35
+      }
+     ]
+    }
+  ]
+}
