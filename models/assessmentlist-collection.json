@@ -1,10 +1,11 @@
 {
   "assessmentlistCollection":[
     {
-      "id":"01",
-      "title":"Member 1",
+      "id":"1",
+      "title":"Assessment List 1",
       "assessments":[
       {
+        "id":"1",
         "weight":105,
         "chest":36,
         "thigh":20,
@@ -15,10 +16,11 @@
      ]
     },
     {
-      "id":"02",
-      "title":"Member 2",
+      "id":"2",
+      "title":"Assessment List 2",
       "assessments":[
       {
+        "id":"2",
         "weight":90,
         "chest":30,
         "thigh":15,
@@ -30,16 +32,17 @@
     },
     
      {
-      "id":"03",
-      "title":"Member 3",
+      "id":"3",
+      "title":"Assessment List 3",
       "assessments":[
       {
-        "weight":90,
-        "chest":30,
-        "thigh":15,
-        "upperArm":10,
-        "waist":30,
-        "hips":35
+        "id":"3",
+        "weight":70,
+        "chest":20,
+        "thigh":8,
+        "upperArm":5,
+        "waist":25,
+        "hips":26
       }
      ]
     }
