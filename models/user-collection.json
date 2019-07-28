@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "firstName": "homer",
+      "lastName": "simpson",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
+    },
+    {
+      "firstName": "marge",
+      "lastName": "simpson",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
+    },
+    {
+      "firstName": "Arshad",
+      "lastName": "Ali",
+      "email": "Arshad@KBGym.ie",
+      "password": "123",
+      "id": "9e42d030-035f-4745-99d1-9dd1098171a1"
+    },
+    {
+      "firstName": "Arshad",
+      "lastName": "Ali",
+      "email": "Arshad@KBHealth.ie",
+      "password": "123",
+      "id": "ae269b51-b9be-40f9-81e7-9357b4cdd449"
+    },
+    {
+      "firstName": "Kate",
+      "lastName": "Ali",
+      "email": "kate@KBHealth.ie",
+      "password": "123",
+      "address": "Apt 5, Orchard Apartments, Canal View",
+      "gender": "Female",
+      "height": "166",
+      "startingWeight": "100",
+      "id": "e9a72dc0-528e-45de-91f0-02ca1fa0f0e9"
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 
 const logger=require('../utils/logger');
 const assessmentlistCollection = require('../models/assessmentlist-collection.js');
+const uuid = require('uuid');
 
 const assessmentlist = {   
   index(request, response){
@@ -28,6 +29,24 @@ const assessmentlist = {
       assessmentlistCollection.removeAssessmentlist(assessmentlistId);
       response.redirect('/dashboard');
     },
+  
+    addAssessment(request, response) {
+      const assessmentlistId = request.params.id;
+      const assessmentlist = assessmentlistCollection.getAssessmentlist(assessmentlistId);
+      const newAssessment = {
+        id:uuid(),
+        weight: request.body.weight,
+        chest: request.body.chest,
+        thigh: request.body.thigh,
+        upperArm: request.body.upperArm,
+        waist: request.body.waist,
+        hips: request.body.hips,
+      };
+      assessmentlistCollection.addAssessment(assessmentlistId, newAssessment);
+      logger.debug('New Assessment = ', newAssessment);
+      response.redirect('/assessmentlist/' + assessmentlistId);
+    },
+  
 };
 
 module.exports = assessmentlist;

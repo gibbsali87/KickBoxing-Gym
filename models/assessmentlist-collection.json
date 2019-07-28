@@ -1,50 +1,41 @@
 {
-  "assessmentlistCollection":[
+  "assessmentlistCollection": [
     {
-      "id":"1",
-      "title":"Assessment List 1",
-      "assessments":[
-      {
-        "id":"1",
-        "weight":105,
-        "chest":36,
-        "thigh":20,
-        "upperArm":15,
-        "waist":36,
-        "hips":42
-      }
-     ]
+      "id": "4ccdf42c-3546-47d5-8353-0f7dc21e8909",
+      "title": "Homer First Assessment",
+      "assessments": [
+        {
+          "id": "96311f32-63ec-4fc7-ba3b-f4efef726c3b",
+          "weight": "104",
+          "chest": "12",
+          "thigh": "12",
+          "upperArm": "10",
+          "waist": "36",
+          "hips": "30"
+        }
+      ]
     },
     {
-      "id":"2",
-      "title":"Assessment List 2",
-      "assessments":[
-      {
-        "id":"2",
-        "weight":90,
-        "chest":30,
-        "thigh":15,
-        "upperArm":10,
-        "waist":30,
-        "hips":35
-      }
-     ]
+      "id": "5251c548-5143-4a0e-9779-da57668741fb",
+      "userid": "ae269b51-b9be-40f9-81e7-9357b4cdd449",
+      "title": "Arshad",
+      "assessments": [
+        {
+          "id": "961d83b8-40f2-47bf-afc7-f9e74b1b11de",
+          "weight": "104",
+          "chest": "12",
+          "thigh": "12",
+          "upperArm": "10",
+          "waist": "36",
+          "hips": "30"
+        }
+      ]
     },
-    
-     {
-      "id":"3",
-      "title":"Assessment List 3",
-      "assessments":[
-      {
-        "id":"3",
-        "weight":70,
-        "chest":20,
-        "thigh":8,
-        "upperArm":5,
-        "waist":25,
-        "hips":26
-      }
-     ]
+    {
+      "id": "48354f9c-a8f2-45cd-a742-cd3556b4e5d7",
+      "userid": "e9a72dc0-528e-45de-91f0-02ca1fa0f0e9",
+      "title": "Kate Assessments",
+      "assessments": []
     }
   ]
 }
