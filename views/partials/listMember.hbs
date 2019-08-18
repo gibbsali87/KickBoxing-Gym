@@ -1,0 +1,14 @@
+{{#each user}}
+  <section class="ui stacked segment">
+    <h2 class="ui header">
+      {{firstName}}
+    </h2>
+    <p> Last Name: {{lastName}} </p>
+    <a href="/accounts/{{id}}" class="ui icon button">
+      <i class="icon folder open"></i>
+    </a>
+    <a href="/dashboard/deleteassessmentlist/{{id}}" class="ui icon button">
+      <i class="icon trash"></i>
+    </a>
+  </section>
+{{/each}}
