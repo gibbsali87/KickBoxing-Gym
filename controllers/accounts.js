@@ -57,6 +57,16 @@ const accounts = {
     return usercollection.getUserByEmail(userEmail);
   },
   
+  getAllUsers(response){
+    return userCollection.getAllUsers();
+  },
+  
+  deleteUser(request, response) {
+    const userid = request.params.id;
+    usercollection.removeUser(userid);
+    response.redirect('/trainersDash');
+  },
+    
 };
 
 module.exports = accounts;

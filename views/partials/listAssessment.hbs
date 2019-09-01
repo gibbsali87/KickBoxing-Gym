@@ -1,3 +1,39 @@
+<section>
+<table class="ui table" id="bmiTab">
+  <thead>
+    <tr>
+      <th>Weight</th>
+      <th>BMI</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each assessmentlist.assessments}}
+      <tr>
+        <td>
+            <script>
+                if (({{weight}}) > 100)
+                {
+                  let bmi = "<i class=""fa fa-heartbeat""; style=""color: #ff3300""> </i>"
+                    document.getElementById("bmi").innerHTML = bmi
+                }
+                else
+                {
+                    document.getElementById("bmi").innerHTML = "Not Obese"
+                }
+            </script>
+            <p id="bmi"> 
+              <i class="fa fa-heartbeat"; style="color: #00dc04"> </i> 
+            </p>
+        </td>
+            <td>BMI</td>
+      </tr>
+
+    {{/each}}
+  </tbody>
+</table>
+</section>
+
+
 <table class="ui table">
   <thead>
     <tr>
@@ -47,46 +83,4 @@
   </tbody>
 </table>
 
-<table class="ui table">
-  <thead>
-    <tr>
-      <th>Weight</th>
-      <th>Thigh</th>
-      <th>Upper Arm</th>
-      <th>Waist</th>
-      <th>Action</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each assessmentlist.assessments}}
-      <tr>
-        <td>
-            <script>
 
-                if (({{weight}}) >= 100)
-                {
-                    document.getElementById("bmi").innerHTML = "Obese"
-                }
-                else
-                {
-                    document.getElementById("bmi").innerHTML = "Not Obese"
-                }
-            </script>
-            <p id="bmi"> <i class="fa fa-heartbeat"; style="color: #00dc04"> </i> </p>
-        </td>
-        <td>
-          {{thigh}}
-        </td>
-        <td>
-          {{upperArm}}
-        </td>
-        <td>
-          {{waist}}
-        </td>
-        <td>
-          <a href="/assessmentlist/{{../assessmentlist.id}}/deleteassessment/{{id}}" class="ui tiny red button">Delete Assessment</a>
-        </td>
-      </tr>
-    {{/each}}
-  </tbody>
-</table>

@@ -2,7 +2,7 @@
   "goallistCollection": [
     {
       "id":"01",
-      "title": "Homer First Assessment",
+      "title": "Arshad Goals",
       "goals": [
         {
           "id":"01",
@@ -11,13 +11,14 @@
           "thigh": "12",
           "upperArm": "10",
           "waist": "36",
-          "hips": "30"
+          "hips": "30",
+          "dateTime": "10/11/2019, 7:59:52 PM"
         }
       ]
     },
     {
       "id":"02",
-      "title": "Arshad",
+      "title": "Arshad Goals",
       "goals": [
         {
           "id":"03",
@@ -27,7 +28,7 @@
           "upperArm": "10",
           "waist": "36",
           "hips": "30",
-          "dateTime": "2019-09-07",
+          "dateTime": "10/12/2019, 7:59:52 PM",
           "comment": ""
         },
         {
@@ -38,7 +39,7 @@
           "upperArm": "10",
           "waist": "36",
           "hips": "30",
-          "dateTime": "8/31/2019",
+          "dateTime": "10/10/2019, 7:59:52 PM",
           "comment": "Second comment"
         }
       ]
@@ -46,7 +47,7 @@
     {
       "id": "48354f9c-a8f2-45cd-a742-cd3556b4e5d7",
       "userid": "e9a72dc0-528e-45de-91f0-02ca1fa0f0e9",
-      "title": "Kate Assessments",
+      "title": "Kate Goals",
       "goals": [
         {
           "id": "b9af5d9b-05d1-4de6-87dd-a7b28eaaf7ca",
@@ -56,7 +57,7 @@
           "upperArm": "12",
           "waist": "32",
           "hips": "30",
-          "dateTime": "10/31/2019"
+          "dateTime": "9/30/2019, 7:59:52 PM"
         }
       ]
     }

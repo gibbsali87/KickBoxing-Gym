@@ -37,18 +37,18 @@
         </td>
         <td>
             <script>
-                let today = new Date();
-                let goaldate = {{dateTime}};
+                var today = new Date().toLocaleString();
+                var goaldate = new Date({{dateTime}})
               
-                if (today > goaldate)
+                if (today > ({{dateTime}}))
                 {
-                    document.getElementById("goal").innerHTML = "Missed"
+                    document.getElementById("goal").innerHTML = Missed
                 }
                 else
                 {
-                    document.getElementById("goal").innerHTML = "Open"
+                    document.getElementById("goal").innerHTML = Open
                 }
-              
+                    
               
             </script>
             <p id="goal">  </p>
@@ -57,3 +57,5 @@
     {{/each}}
   </tbody>
 </table>
+
+

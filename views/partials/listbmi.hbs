@@ -1,0 +1,50 @@
+<table class="ui table" id="bmiTab">
+  <thead>
+    <script>
+        $(document).ready(function(){
+
+            $("tr").hide();
+            $("#bmiTab").children('tbody').children('tr:first').show();
+        });
+</script>
+    <tr>
+      <th>Weight</th>
+      <th>Thigh</th>
+      <th>Upper Arm</th>
+      <th>Waist</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each assessmentlist.assessments}}
+      <tr>
+        <td>
+            <script>
+
+                if (({{weight}}) >= 100)
+                {
+                    document.getElementById("bmi").innerHTML = "Obese"
+                }
+                else
+                {
+                    document.getElementById("bmi").innerHTML = "Not Obese"
+                }
+            </script>
+            <p id="bmi"> 
+              <i class="fa fa-heartbeat"; style="color: #00dc04"> </i> 
+            </p>
+        </td>
+        <td>
+          {{thigh}}
+        </td>
+        <td>
+          {{upperArm}}
+        </td>
+        <td>
+          {{waist}}
+        </td>
+
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

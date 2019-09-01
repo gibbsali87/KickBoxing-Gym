@@ -1,8 +1,5 @@
 {{> menu id="dashboard"}}
 
-<section class="ui segment">
-  {{> listusers}}
-</section>
 
 <section class="ui segment">
   {{> listassessmentlists}}
@@ -10,5 +7,11 @@
 
 </section>
 
-
-
+<section class="ui segment">
+  <iframe class="ui segment" src="listgoals" height="500px" width="100%" name="goals">
+    <a href="listgoals#activate"
+       target="goals"
+       onclick="frames['goals'].document.getElementById('activate')
+                .scrollIntoView();return false"></a>
+  </iframe>
+</section>

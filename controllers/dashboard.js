@@ -1,11 +1,10 @@
 "use strict";
 
-
-
 const accounts = require ('./accounts.js');
 const logger = require("../utils/logger");
 const assessmentlistCollection = require('../models/assessmentlist-collection');
 const uuid = require('uuid');
+const trainers = require('../models/trainerslist-store');
 
 const dashboard = {
   index(request, response) {
@@ -37,7 +36,9 @@ const dashboard = {
       logger.debug('Creating a new Assessmentlist', newAssessmentList);
       assessmentlistCollection.addAssessmentlist(newAssessmentList);
       response.redirect('/dashboard');
-  }
+  },
+
+  
 };
 
 module.exports = dashboard;
