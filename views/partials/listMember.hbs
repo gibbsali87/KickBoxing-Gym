@@ -1,10 +1,10 @@
-{{#each assessmentlists}}
+{{#each user}}
   <section class="ui stacked segment">
     <h2 class="ui header">
-      {{title}}
+      {{firstName}}
     </h2>
-    <p> Number of Assessments: {{assessmentsNumber}} </p>
-    <a href="/assessmentlist/{{id}}" class="ui icon button">
+    <p> Last Name: {{lastName}} </p>
+    <a href="/accounts/{{id}}" class="ui icon button">
       <i class="icon folder open"></i>
     </a>
     <a href="/dashboard/deleteassessmentlist/{{id}}" class="ui icon button">
@@ -12,4 +12,3 @@
     </a>
   </section>
 {{/each}}
-

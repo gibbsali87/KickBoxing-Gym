@@ -1,13 +1,11 @@
 "use strict";
 
+
+
 const accounts = require ('./accounts.js');
 const logger = require("../utils/logger");
-<<<<<<< Updated upstream
-const assessmentlistCollection = require('../models/assessmentlist-collection.js');
-=======
 const assessmentlistCollection = require('../models/assessmentlist-collection');
 const uuid = require('uuid');
->>>>>>> Stashed changes
 
 const dashboard = {
   index(request, response) {
@@ -15,17 +13,10 @@ const dashboard = {
     const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
       title: "KB Gym Dashboard",
-<<<<<<< Updated upstream
-      assessmentlists:assessmentlistCollection,
-=======
       assessmentlists:assessmentlistCollection.getUserAssessmentlists(loggedInUser.id),
->>>>>>> Stashed changes
     };
-    logger.info('about to render',assessmentlistCollection);
+    logger.info('about to render',assessmentlistCollection.getAllAssessmentlists());
     response.render("dashboard", viewData);
-<<<<<<< Updated upstream
-  }
-=======
   },
   
     deleteAssessmentlist(request, response) {
@@ -46,8 +37,7 @@ const dashboard = {
       logger.debug('Creating a new Assessmentlist', newAssessmentList);
       assessmentlistCollection.addAssessmentlist(newAssessmentList);
       response.redirect('/dashboard');
-  },
->>>>>>> Stashed changes
+  }
 };
 
 module.exports = dashboard;

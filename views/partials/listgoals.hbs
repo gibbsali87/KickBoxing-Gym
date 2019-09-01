@@ -1,0 +1,59 @@
+<table class="ui table">
+  <thead>
+    <tr>
+      <th>Weight</th>
+      <th>Chest</th>
+      <th>Thigh</th>
+      <th>Upper Arm</th>
+      <th>Waist</th>
+      <th>Hips</th>
+      <th>Date Time</th>
+      <th>Goal Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each goallist.goals}}
+      <tr>
+        <td>
+          {{weight}}
+        </td>
+        <td>
+          {{chest}}
+        </td>
+        <td>
+          {{thigh}}
+        </td>
+        <td>
+          {{upperArm}}
+        </td>
+        <td>
+          {{waist}}
+        </td>
+        <td>
+          {{hips}}
+        </td>
+        <td>
+          {{dateTime}}
+        </td>
+        <td>
+            <script>
+                let today = new Date();
+                let goaldate = {{dateTime}};
+              
+                if (today > goaldate)
+                {
+                    document.getElementById("goal").innerHTML = "Missed"
+                }
+                else
+                {
+                    document.getElementById("goal").innerHTML = "Open"
+                }
+              
+              
+            </script>
+            <p id="goal">  </p>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

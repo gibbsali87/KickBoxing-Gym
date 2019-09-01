@@ -5,6 +5,8 @@ const logger = createLogger({
   format: combine(
     label({ label: "KB Gym" }),
     //     timestamp(),
+    
+    
     prettyPrint()
   ),
   transports: [new transports.Console()]

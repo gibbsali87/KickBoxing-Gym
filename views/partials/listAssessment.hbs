@@ -7,6 +7,9 @@
       <th>Upper Arm</th>
       <th>Waist</th>
       <th>Hips</th>
+      <th>Date Time</th>
+      <th>Comment</th>
+      <th>Action</th>
     </tr>
   </thead>
   <tbody>
@@ -29,6 +32,59 @@
         </td>
         <td>
           {{hips}}
+        </td>
+        <td>
+          {{dateTime}}
+        </td>
+        <td>
+          {{comment}}
+        </td>
+        <td>
+          <a href="/assessmentlist/{{../assessmentlist.id}}/deleteassessment/{{id}}" class="ui tiny red button">Delete Assessment</a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<table class="ui table">
+  <thead>
+    <tr>
+      <th>Weight</th>
+      <th>Thigh</th>
+      <th>Upper Arm</th>
+      <th>Waist</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each assessmentlist.assessments}}
+      <tr>
+        <td>
+            <script>
+
+                if (({{weight}}) >= 100)
+                {
+                    document.getElementById("bmi").innerHTML = "Obese"
+                }
+                else
+                {
+                    document.getElementById("bmi").innerHTML = "Not Obese"
+                }
+            </script>
+            <p id="bmi"> <i class="fa fa-heartbeat"; style="color: #00dc04"> </i> </p>
+        </td>
+        <td>
+          {{thigh}}
+        </td>
+        <td>
+          {{upperArm}}
+        </td>
+        <td>
+          {{waist}}
+        </td>
+        <td>
+          <a href="/assessmentlist/{{../assessmentlist.id}}/deleteassessment/{{id}}" class="ui tiny red button">Delete Assessment</a>
         </td>
       </tr>
     {{/each}}

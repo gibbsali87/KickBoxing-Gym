@@ -1,8 +1,3 @@
-<<<<<<< Updated upstream
-"use strict";
-
-const assessmentlistCollection = require('./assessmentlist-collection.json').assessmentlistCollection;
-=======
 'use strict';
 
 const _ = require('lodash');
@@ -58,7 +53,7 @@ const assessmentlistCollection = {
     return this.store.findBy(this.collection, {userid: userid});
   },
   
+  
 };
 
->>>>>>> Stashed changes
 module.exports = assessmentlistCollection;

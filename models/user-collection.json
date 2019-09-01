@@ -26,7 +26,8 @@
       "lastName": "Ali",
       "email": "Arshad@KBHealth.ie",
       "password": "123",
-      "id": "ae269b51-b9be-40f9-81e7-9357b4cdd449"
+      "id": "ae269b51-b9be-40f9-81e7-9357b4cdd449",
+      "trainer": "1"
     },
     {
       "firstName": "Kate",
@@ -37,7 +38,20 @@
       "gender": "Female",
       "height": "166",
       "startingWeight": "100",
-      "id": "e9a72dc0-528e-45de-91f0-02ca1fa0f0e9"
+      "id": "e9a72dc0-528e-45de-91f0-02ca1fa0f0e9",
+      "trainer": "2"
+    },
+    {
+      "firstName": "Arshad",
+      "lastName": "User",
+      "email": "gibbskhan87@gmail.com",
+      "password": "123",
+      "address": "Apt 5, Orchard Apartments, Canal View",
+      "gender": "Male",
+      "height": "166",
+      "startingWeight": "100",
+      "trainer": "0",
+      "id": "9282fcdb-9b29-4a35-8a03-2da7e5bb0437"
     }
   ]
 }

@@ -56,6 +56,7 @@ const accounts = {
     const userEmail = request.cookies.assessmentlist;
     return usercollection.getUserByEmail(userEmail);
   },
+  
 };
 
 module.exports = accounts;

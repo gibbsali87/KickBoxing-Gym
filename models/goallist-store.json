@@ -1,11 +1,11 @@
 {
   "goallistCollection": [
     {
-      "id": "4ccdf42c-3546-47d5-8353-0f7dc21e8909",
-      "title": "Homer First Goal",
+      "id":"01",
+      "title": "Homer First Assessment",
       "goals": [
         {
-          "id": "96311f32-63ec-4fc7-ba3b-f4efef726c3b",
+          "id":"01",
           "weight": "104",
           "chest": "12",
           "thigh": "12",
@@ -16,48 +16,29 @@
       ]
     },
     {
-      "id": "5251c548-5143-4a0e-9779-da57668741fb",
-      "userid": "ae269b51-b9be-40f9-81e7-9357b4cdd449",
+      "id":"02",
       "title": "Arshad",
       "goals": [
         {
-          "id": "8aa8c96e-ea39-4be8-ba1e-c99b0da95cbb",
-          "weight": "104",
-          "chest": "12",
-          "thigh": "12",
-          "upperArm": "10",
-          "waist": "36",
-          "hips": "30"
-        },
-        {
-          "id": "ad4ff0fe-4f5c-4f7b-9b4e-1f93915bd454",
-          "weight": "104",
-          "chest": "12",
-          "thigh": "12",
-          "upperArm": "10",
-          "waist": "36",
-          "hips": "30"
-        },
-        {
-          "id": "f3d13cff-8d95-4800-a100-1d900daf651a",
+          "id":"03",
           "weight": "104",
           "chest": "12",
           "thigh": "12",
           "upperArm": "10",
           "waist": "36",
           "hips": "30",
-          "dateTime": "2019-8-18 12:50:56",
+          "dateTime": "2019-09-07",
           "comment": ""
         },
         {
-          "id": "04f97aaf-bc44-407c-9621-5da95aa9f870",
+          "id":"04",
           "weight": "80",
           "chest": "12",
           "thigh": "12",
           "upperArm": "10",
           "waist": "36",
           "hips": "30",
-          "dateTime": "8/31/2019, 7:59:52 PM",
+          "dateTime": "8/31/2019",
           "comment": "Second comment"
         }
       ]
@@ -65,7 +46,7 @@
     {
       "id": "48354f9c-a8f2-45cd-a742-cd3556b4e5d7",
       "userid": "e9a72dc0-528e-45de-91f0-02ca1fa0f0e9",
-      "title": "Kate Goals",
+      "title": "Kate Assessments",
       "goals": [
         {
           "id": "b9af5d9b-05d1-4de6-87dd-a7b28eaaf7ca",
@@ -74,10 +55,10 @@
           "thigh": "18",
           "upperArm": "12",
           "waist": "32",
-          "hips": "30"
+          "hips": "30",
+          "dateTime": "10/31/2019"
         }
       ]
     }
   ]
 }
-

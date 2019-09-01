@@ -41,6 +41,8 @@ const assessmentlist = {
         upperArm: request.body.upperArm,
         waist: request.body.waist,
         hips: request.body.hips,
+        dateTime: new Date().toLocaleString(),
+        comment:request.body.comment,
       };
       assessmentlistCollection.addAssessment(assessmentlistId, newAssessment);
       logger.debug('New Assessment = ', newAssessment);

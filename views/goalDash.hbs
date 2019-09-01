@@ -1,0 +1,13 @@
+{{> menu id="goalDash"}}
+
+{{#each goallists}}
+  <section class="ui segment">
+    <h2 class="ui header">
+      {{title}}
+    </h2>
+    <p> Weeks: {{duration}} </p>
+    <a href="/goallist/{{id}}" class="ui icon button">  
+      <i class="icon folder open"></i> 
+    </a>
+  </section>
+{{/each}}
